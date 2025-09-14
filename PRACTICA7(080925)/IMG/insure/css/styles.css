@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+#banner nav{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(233,26%,24%);
+}
+
+.menu-links{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    color: hsl(233,8%,62%);
+    text-transform: uppercase;
+    font-size: 10pt;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.links:hover{
+    color: #000;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-option{
+    border: 2px solid #000;
+    border-radius: 0px;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    font-size: 8pt;
+    font-weight: 700;
+    background-color: transparent;
+    cursor:pointer;
+}
+
+.elements-banner{
+    height: 100vh;
+    background-color: hsl(256, 26%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.text-banner, .img-banner {
+    flex: 1; /*cada contenedor ocupa el 50%bde la pantalla*/
+}
+.text-banner{
+    padding-right: 20px;
+    color: #fff;
+}
+.text-banner h1{
+    color: #fff;
+    font-size:60px;
+    font-family: 'DM Serif Text', serif;
+}
+.line span{
+    display: inline-block;
+    width: 150px;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 40px;
+
+}
+.text-banner p{
+    line-height: 25px;
+    font-size: 10px;
+
+}
+.text-banner .btn-option{
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    margin-top: 30px;
+    padding: 8px 30px;
+}

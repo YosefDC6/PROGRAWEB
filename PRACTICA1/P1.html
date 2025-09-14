@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera pagina web</title>
+    <link rel="stylesheet" href="CSS/css1.css"/>
+</head>
+<body>
+    <h1>Mondongo</h1>
+    <img src="IMG/VRU_253240_baadb6558a57404fbaead2d9b860755f__la_moto_de_vegeta_1200px.jpg" alt="">
+    <p>EL axel es un putito  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sunt obcaecati quidem iste facere perspiciatis ipsum dignissimos adipisci aperiam magni accusamus ducimus quis nemo doloribus? Aperiam vel aut ab fugit?</p>
+<picture>
+    <source srcset="hola.png" alt">
+</picture>
+<br> 
+
+    <ol>
+        <li>opcion 1</li>
+        <li>opcion 2</li>
+        <li>opcion 3</li>
+        <li>opcion 4</li>
+    </ol>
+<ol>
+    <li>opcion de menu</li>
+    <li>opcion de menu</li>
+    <li>opcion de menu</li>
+</ol>
+
+<h1>titulo UwU </h1>
+<h2>titulo UwU </h2>
+<h3>titulo UwU </h3>
+<h4>titulo UwU </h4>
+   
+ <a href="https://www.google.com"
+ target="_blank"><click aquí></a>
+ <img src="IMG/descarga.png" alt=""> 
+ <picture>
+    <source srcset="IMG/descarga.png" />
+ </picture>
+
+ <div style="border: 5px solid #21C6D9; display: inline-block">
+    <p> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta commodi amet quis beatae sunt ipsum ipsa nostrum illum rem alias et molestias quisquam corrupti debitis, dicta quia natus odit.
+    </p>
+ </div>
+ <form id="formulario">
+    <div>
+        <label for="Nombre">Nombre</label>
+  <input type="text" name="Nombre" id="Nombre" required>
+    </div>
+    <div>
+    <label for="password">Contraseña</label>
+  <input type="password" name="password" id="password">    
+    </div>
+    <div>
+        <input type="radio" name="fav_lenguage" id="HTML"
+        value="HTML" /><label for="fav_lenguage"HTML></label>
+        <input type="radio" name="fav_lenguage" id="CSS"
+        value="CSS" /><label for="fav_lenguage"CSS></label>
+        <input type="radio" name="v" id="javasript"
+        value="javascript" /><label for="fav_lenguage"javascript></label>    
+    </div>
+    <div>
+        <input type="checkbox" name="option" id="si"
+        value="si"><label for="option">si</label>
+        <input type="checkbox" name="option" id="no"
+        value="no"><label for="option">no</label>
+        <input type="checkbox" name="option" id="tal vez"
+        value="tal vez"><label for="option">tal vez</label>
+    </div>
+    <div>
+        <select name="country" id="country">
+            <option value="" selected> selecciona una opcion</option>
+            <option value="Mexico">Mexico</option>
+            <option value="China">China</option>
+            <option value="Francia">Francia</option>
+        </select>
+    </div>
+    <input type="submit" value="Enviar" />
+ </form>  
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function(evente){
+            event.preventDefault(); //evita que la pagina se recargue
+            const valor = document.getElementById("Nombre").
+            value;
+            alert("Hola " + valor);
+        })
+    </script>
+</body>
+</html>

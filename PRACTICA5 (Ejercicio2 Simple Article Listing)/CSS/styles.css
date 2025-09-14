@@ -1,0 +1,122 @@
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #111827;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+header img {
+  margin-top: 2.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+}
+
+/* Lista de artículos */
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Cada artículo */
+article {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+article img {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.info h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.info time {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Autor al final*/
+.author-info {
+  color: black;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* ====== Escritorio grande (>=1350px) ====== */
+@media (max-width: 1350px) {
+  .articles-list {
+    max-width: 1100px; /* reduce un poco el ancho máximo */
+  }
+
+  .info h2 {
+    font-size: 1.05rem;
+  }
+}
+
+/* ====== Tablets y laptops (<=1024px) ====== */
+@media (max-width: 1024px) {
+  .articles-list {
+    max-width: 90%;  /* ocupa más ancho de pantalla */
+  }
+
+  article img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .info h2 {
+    font-size: 1rem;
+  }
+}
+
+/* ====== Móviles (<=412px) ====== */
+@media (max-width: 412px) {
+  article {
+    flex-direction: column;   /* imagen arriba, texto abajo */
+    align-items: center;      /* centrado */
+    text-align: center;
+  }
+
+  article img {
+    width: 100%;
+    max-width: 250px;  /* evita que se agrande demasiado */
+    height: auto;
+  }
+
+  .info h2 {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .info time {
+    font-size: 0.8rem;
+  }
+}

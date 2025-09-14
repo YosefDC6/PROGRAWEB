@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:darkgray;
+
+}
+
+.title{
+    text-align: center;
+}
+
+p{
+    padding: 10px;
+    color: black;
+    text-align: justify;
+    font-size: 2opx;
+    line-height: 2;
+    letter-spacing: 3px;
+
+}
+
+a{
+    text-decoration: none;
+    color:azure;
+    font-weight: bold;
+    font-size: 20pt;
+    display: inline-block;
+    border: 2px solid #fff;
+    margin: 0 auto;
+}
+a:hover{
+    color:blue;
+    transition: 0.5;
+}

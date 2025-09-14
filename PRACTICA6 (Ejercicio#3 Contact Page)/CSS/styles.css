@@ -1,0 +1,209 @@
+/* Fuente y reset */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Fondo con imagen y flexbox para centrar contenido */
+.background {
+  display: flex;
+  flex-direction: column; /* apilar elementos verticalmente */
+  justify-content: center; /* centrar verticalmente */
+  align-items: center;     /* centrar horizontalmente */
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  background: url("../IMG/background.svg") no-repeat center center;
+  background-size: cover;
+}
+
+/* Logo fijo en la esquina superior izquierda */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.logo img {
+  height: 32px;
+}
+
+/* Contenedor principal */
+.contact-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+/* Encabezado */
+.contact-container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.contact-container p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #e5e7eb;
+  font-weight: 700;
+}
+
+/* Formulario */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Fila doble */
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+}
+
+/* Agrupador de inputs con label */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Labels arriba de los inputs */
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 700; /* negrita */
+  color: #d1d5db;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* Inputs, selects y textarea */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 14px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700; /* negrita */
+  width: 100%;
+  background: #fff;
+  color: #111;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+/* Ajuste del textarea */
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* Botón */
+.contact-form button {
+  padding: 16px;
+  background: #fff;
+  color: #6d28d9;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700; /* negrita */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background: #f3f4f6;
+  transform: translateY(-2px);
+}
+
+/* Autor al final, centrado debajo del formulario */
+.author-info {
+  color: #fff;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/*-----------------------------------Responsive---------------------------------------------------*/
+/* Para pantallas grandes (desktop) 1350px */
+@media (max-width: 1350px) {
+  .contact-container {
+    padding: 35px;
+    max-width: 600px;
+  }
+
+  .contact-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-container p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Para pantallas medianas (tablet) 1024px */
+@media (max-width: 1024px) {
+  .contact-container {
+    padding: 30px;
+    max-width: 500px;
+  }
+
+  .contact-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-container p {
+    font-size: 0.9rem;
+  }
+
+  .form-row {
+    flex-direction: column; /* filas dobles pasan a vertical */
+    gap: 15px;
+  }
+}
+
+/* Para pantallas pequeñas (móvil) 412px */
+@media (max-width: 412px) {
+  .contact-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .contact-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .contact-container p {
+    font-size: 0.85rem;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .logo img {
+    height: 28px;
+  }
+}

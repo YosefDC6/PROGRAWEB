@@ -22,7 +22,7 @@ El propósito es practicar el uso de Flexbox para construir diseños flexibles y
 
 ## 🔗 Enlace al proyecto
 Repositorio en GitHub: [Pega aquí tu enlace]  
-Deploy: [LINK](http://yomidev.github.io/newsletter/)
+Deploy: [LINK](https://github.com/YosefDC6/EJERCICIO2.git)
 ---
 
 ## 📝 Reflexión

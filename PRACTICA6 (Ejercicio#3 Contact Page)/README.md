@@ -23,7 +23,7 @@ El objetivo principal es practicar el uso de formularios, campos de entrada e in
 
 ## 🔗 Enlace al proyecto
 Repositorio en GitHub: [Pega aquí tu enlace]  
-Deploy: [LINK](http://yomidev.github.io/newsletter/)
+Deploy: [LINK](https://github.com/YosefDC6/EJERCICIO3.git)
 ---
 
 ## 📝 Reflexión

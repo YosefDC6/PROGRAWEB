@@ -20,7 +20,7 @@ Desarrolla una página web usando HTML y CSS que permita a los usuarios suscribi
 
 ## 🔗 Enlace al proyecto
 Repositorio en GitHub: [Pega aquí tu enlace]  
-Deploy: [LINK](https://github.com/YosefDC6/EJERCICIO1.git)
+Deploy: [LINK](http://yomidev.github.io/newsletter/)
 ---
 
 ## 📝 Reflexión

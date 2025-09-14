@@ -1,0 +1,59 @@
+
+Flujo básico de trabajo con Git en VS Code
+=========================================
+
+1. Primera vez (proyecto nuevo)
+-------------------------------
+# Inicializar Git en tu carpeta
+git init
+
+# Conectar tu proyecto con GitHub (solo una vez)
+git remote add origin https://github.com/TU-USUARIO/TU-REPO.git
+
+# Subir tu proyecto por primera vez
+git add .
+git commit -m "Primer commit"
+git branch -M main
+git push -u origin main
+
+
+2. Cada vez que hagas cambios
+-----------------------------
+# Ver qué archivos cambiaron
+git status
+
+# Agregar los cambios al "staging area"
+git add .
+
+# Guardar los cambios con un mensaje
+git commit -m "Descripción de los cambios"
+
+# Subir cambios a GitHub
+git push
+
+
+3. Si hay cambios en GitHub que tú no tienes
+--------------------------------------------
+git pull
+
+
+4. Comandos útiles
+------------------
+# Ver la URL del repositorio remoto
+git remote -v
+
+# Ver el historial de commits
+git log --oneline
+
+# Cambiar de rama o crear una nueva
+git checkout -b nombre_rama
+
+
+Consejos
+--------
+- Rojo en 'git status' = Archivos modificados.
+- Verde = Archivos listos para commit.
+- Limpio = Todo está sincronizado.
+- Usa mensajes de commit claros:
+  * "Agrego función de login"
+  * "Corrijo error en formulario"
